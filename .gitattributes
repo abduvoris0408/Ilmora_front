@@ -1,0 +1,7 @@
+# Barcha matnli fayllar repoda va diskda LF (prettier endOfLine: "lf" bilan bir xil)
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary

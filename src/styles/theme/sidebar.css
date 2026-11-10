@@ -1,0 +1,39 @@
+/*
+ * SIDEBAR USLUBLARI — <html data-sidebar-style="light | dark | brand">
+ * "light" — standart (tokens.css). Qolganlari faqat --sidebar-* token'larini almashtiradi,
+ * komponentlar o'zgarmaydi. Tepa menyu (layout="top") ham shu token'lardan foydalanadi.
+ */
+
+:root[data-sidebar-style="dark"],
+.dark[data-sidebar-style="dark"] {
+  --sidebar: oklch(0.22 0.014 var(--neutral-h));
+  --sidebar-foreground: oklch(0.86 0.01 var(--neutral-h));
+  --sidebar-accent: oklch(1 0 0 / 10%);
+  --sidebar-accent-foreground: oklch(0.85 calc(var(--brand-c) * 0.55) var(--brand-h));
+  --sidebar-muted: oklch(1 0 0 / 6%);
+  --sidebar-muted-foreground: oklch(0.68 0.015 var(--neutral-h));
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-primary: oklch(var(--brand-dl) calc(var(--brand-c) * 0.92) var(--brand-h));
+  --sidebar-primary-foreground: var(--brand-fg-dark);
+}
+
+.dark[data-sidebar-style="dark"] {
+  --sidebar: oklch(0.13 0.008 var(--neutral-h));
+}
+
+:root[data-sidebar-style="brand"],
+.dark[data-sidebar-style="brand"] {
+  --sidebar: oklch(calc(var(--brand-l) - 0.06) var(--brand-c) var(--brand-h));
+  --sidebar-foreground: oklch(1 0 0 / 82%);
+  --sidebar-accent: oklch(1 0 0 / 16%);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-muted: oklch(1 0 0 / 9%);
+  --sidebar-muted-foreground: oklch(1 0 0 / 62%);
+  --sidebar-border: oklch(1 0 0 / 14%);
+  --sidebar-primary: oklch(1 0 0);
+  --sidebar-primary-foreground: oklch(calc(var(--brand-l) - 0.06) var(--brand-c) var(--brand-h));
+}
+
+.dark[data-sidebar-style="brand"] {
+  --sidebar: oklch(0.3 calc(var(--brand-c) * 0.55) var(--brand-h));
+}
